@@ -1,0 +1,163 @@
+<html>
+<head><title>WPproject1</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="google-signin-client_id" content="337037970706-5jnuliokia3g77gj535mlla2p97lples.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="C:\xampp\htdocs\script.js"></script>
+<style>
+.icon{dispay:block; margin-left:auto; margin-right:auto;}
+.g-signin2:hover{opacity:0.9;}
+.g-signin2{
+display:block;
+horizontal-align:middle;
+vertical-align:middle;
+margin-left:10px;
+margin-top:40px;
+}
+.data{display:none;}
+</style>
+</head>
+<body background="C:\xampp\htdocs\bg.jpg" width="1800" height="1200" >
+<div style="background-image:url('http://localhost:8080/bg3.jpg'); font-family:sans-serif; background-repeat:no-repeat;background-size:2200px 1500px; ">
+<table cellspacing="1" >
+<tr>
+<th><div style="background-image:url('http://localhost:8080/logo1.png');background-size:100%;float:left;">
+<span><img  width="170" height="170"/></span></div><br/></th>
+<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style="font-size:60; float:center;">BMS COLLEGE  OF ENGINEERING</div><br/><center><h3>(Autonomous Institute under VTU)</h3></center></th></tr>
+</table>
+<hr/>
+<p>
+<button onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:200px; height:50px; background-color:red; font-size:32;">SignUp</button>
+</h3>
+</p>
+<style>
+.modal{
+background-color:black;
+display:none;
+position:fixed;
+z-index:1;
+top:300px; 
+ left:27%; 
+  width:620px; 
+width:50%;height:70%;
+overflow:auto;
+}
+.icon{
+left:40%;
+}
+</style>
+
+<div id="modal-wrapper" class="modal" align="center">
+<table style="background:#000; color:#fff; font-color:white; font-size:35;">
+<tr><td>
+<h2 align="center">SIGNUP FORM...
+<button style="float:right;background-color:red;"data-dismiss="modal" Id="close">x</button>
+<br/><br/>
+<form class="modal-content"style="background:#000; color:#fff; font-color:white; font-size:35;" method="POST" action="homepage.html">
+<div class="icon" style="background-image:url('http://localhost:8080/ic.jpg'); width:100px; height:100px; border-radius:75%; background-size:100%;">
+  <img class="icon" align="center" size="100%" />
+  </div>
+  </center>
+  <br/>
+  <div style="width:100%;horizontal-align:middle;">
+  <p>User:&nbsp;&nbsp;
+  <input style="width:20px; height:20px;"type="radio" name="user" value="faculty">&nbsp;Faculty&nbsp;&nbsp;&nbsp;&nbsp;
+  <input style="width:20px; height:20px;"type="radio" name="user" value="student">&nbsp;Student<br/><br/></p> 
+<p>Username:
+<input type="text" id="username" style="background-color:red;width:75%;"placeholder="Enter username" name="username" style="width:100%;"><br/></p>
+<p>Create Password:
+<input type="password" id="password"style="background-color:red;width:60%;" placeholder="Enter password" name="password"style="width:100%;"><br/></p>
+<p>Confirm Password:
+<input type="password" id="password"style="background-color:red;" placeholder="Confirm password" name="password"><br/><br/></p>
+<button class="button" style="text-align:center; width:80%; background-color:red;margin-left:30px;" onclick="document.getElementById('id1').style.display='block'">SignUp</button></p>
+<p align="center"><center><div class="g-signin2" data-width="240" data-height="50" >
+</div>
+</form>
+</td></tr>
+</table>
+</div>
+<script>
+var modal=document.getElementById('modal-wrapper');
+var closebtn=document.getElementById('close')
+closebtn.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick=function(event) {
+	if(event.target==modal){
+	modal.style.display="none";
+	}
+}
+</script>
+<p><h1 align="center" ><br/>
+<div style="font-style:bold; font-size:62;"class="name">CIE MANAGEMENT SYSTEM</div></h1></p><br/>
+ <p align="center">
+<table border="1" style="background:#000; color:#fff; font-color:white; font-size:35;">
+<tr>
+<td> 
+<h2 align="center"><br/>LOGIN FORM...</h2><br/>
+<div align="center" style="width:520px; height:420px;">       
+<form action="homepage.html" method="POST">
+<center>
+<div style="background-image:url('http://localhost:8080/ic.jpg'); width:100px; height:100px; border-radius:75%; background-size:100%;">
+  <img class="icon" size="100%" />
+  </div>
+  </center>
+  <br/>
+  <div style="width:100%;horizontal-align:middle;">
+  <p>User:&nbsp;&nbsp;
+  <input style="width:20px; height:20px;"type="radio" name="user" value="faculty">&nbsp;Faculty&nbsp;&nbsp;&nbsp;&nbsp;
+  <input style="width:20px; height:20px;"type="radio" name="user" value="student">&nbsp;Student<br/></p> 
+<p>Username:
+&nbsp;&nbsp;<input type="text" id="username" style="background-color:red;"placeholder="Enter username" name="username"><br/></p>
+<p>Password:
+&nbsp;&nbsp;<input type="password" id="password"style="background-color:red;" placeholder="Enter password" name="password"><br/></p>
+</div>
+<div id="lower"><p>
+<input type="checkbox" style="width:20px; height:20px;">&nbsp;&nbsp;Keep me logged in<br/>
+</div>
+
+</div>
+<p align="center"><br/>
+<button class="button" style="border-radius:50px;text-align:center;width:70%; font-color:black; background-color:red;" onclick="document.getElementById('id1').style.display='block'">LOGIN</button></p>
+<center><a href="forgot_password.html"><h3>Forgot password?</h3></a></center>
+<p align="center"><center><div class="g-signin2" data-width="240" data-height="50" >
+</form>
+  <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {'font-size-adjust':100,
+        'scope': 'profile email',
+		'padding':20,
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+</div></center></p>
+<div class="data">
+<p>Profile Details</p>
+<img id="pic" class="img-circle" width="100" height="100"/>
+<p>Email Address</p>
+<p id="email" class="alert alert-danger"></p> 
+<button onclick="SignOut()" class="btn btn-danger">SignOut</button>
+
+</div>
+</td>
+</tr>
+</form>
+</table>
+</p>
+</div>
+ </body>
+</html>
